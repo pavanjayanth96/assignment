@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Management System</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="module" src="main.js"></script>
+    
+</head>
+
+<body>
+  
+   
+    <center>
+      <h1 class="heading">Customer Management System</h1>
+    </center>
+      <form  novalidate >
+            
+           <div >
+               <label for="first" id="s">First Name:</label>
+              <input type="text"
+              name="firstname"
+              id="firstname"
+              required
+              placeholder="Enter your first name"
+              />
+            </div> 
+            <p id="First_err"></p>
+            <!-- <p id="firstname_errors"></p> -->
+            <div>
+              <label for="Last">Last Name:</label>
+              <input type="text"
+                     name="lastname"
+                      id="lastname"
+              placeholder="Enter your last name"
+              />
+            </div>
+            <div>
+                    <label for="Email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+              placeholder="Enter your email"  
+                     required
+                    />
+                    <p id="email_err"></p>
+                    <!-- <p id="email_errors"></p>  -->
+                  </div>
+                  <div>
+                    <label for="mobile">Mobile:</label>
+                    <input
+                      type="tel"
+                      name="mobile"
+                      id="mobile"
+                      
+                      
+              placeholder="Enter your Mobile"
+              
+                    />
+                    <!-- <p id="mobile_errors"></p>  -->
+                    
+                  </div>
+                  <p id="Mobile_err"></p>
+                  <div class="button">
+            <input type="submit" value="Save" class="button"/>
+                 </div>
+    </form>
+    <br/> 
+   <form id="form_style">
+      <p id="showdata"></p>
+    </form>
+    
+
+    <!-- <form>
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>LastName</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </form> -->
+    
+
+    </div>
+    
+    
+
+    
+
+    <!-- <script type="text/javascript">
+          function validate(){
+            if(document.myform.firstname.value ==""){
+                //alert("Enter first name");
+               // document.getElementById('firstname_errors').innerHTML="Please Enter First name";
+            return false;
+            } 
+            if(document.myform.mobile.value=="" || String(document.myform.mobile.value).length >= 10 ){
+               //document.getElementById('mobile_errors').innerHTML="Please Enter valid number";
+              //alert("Please Enter valid number");
+              return false
+            }
+
+            
+
+          }
+           
+    </script> -->
+</body>
+</html>
